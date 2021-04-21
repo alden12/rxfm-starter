@@ -1,0 +1,73 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#app {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  height: 100%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin: 0.83em 0;
+  font-weight: bold;
+}
+
+p {
+  display: block;
+  margin: 1em 0;
+  font-size: 1em;
+}
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.example {
+  width: 400px;
+  height: 200px;
+  border: 1px solid black;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  padding-top: 0;
+  overflow: auto;
+}
+
+.example-class {
+  color: green;
+  text-decoration: underline;
+}
+
+.another-class {
+  color: purple;
+  word-spacing: 2px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 5px 0;
+  border-bottom: 1px solid black;
+}
