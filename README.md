@@ -4,7 +4,7 @@ Welcome to the RxFM starter app! You can learn more about RxFM on its [GitHub pa
 
 ## Getting Started
 
-Make sure you have node installed, then in the app root directory run:
+Make sure you have [Node](https://nodejs.org/) installed, then in the app root directory run:
 ```sh
 npm install
 ```
