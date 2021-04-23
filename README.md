@@ -14,7 +14,7 @@ Followed by:
 npm start
 ```
 
-Once this has finished, open your browser to [localhost:3000](http://localhost:3000/) to view the live app!
+Once this has finished, open your browser to [localhost:4200](http://localhost:4200/) to view the live app!
 
 ## Build the App
 
