@@ -21,7 +21,8 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "rxfm": "^1.0.0-alpha.3"
+    "rxfm": "^1.0.0-alpha.3",
+    "rxjs": "6.5.2"
   },
   "devDependencies": {
     "@types/jest": "^26.0.20",
