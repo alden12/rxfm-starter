@@ -1,16 +1,14 @@
 const path = require('path');
-const webpackRxjsExternals = require('webpack-rxjs-externals');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = [
   {
     mode: "production",
     devtool: "source-map",
-    entry: "./src/lib/index.ts",
+    entry: "./src/app/index.ts",
     output: {
-      filename: 'index.js',
+      filename: 'app.bundle.js',
       path: path.resolve(__dirname, 'dist'),
-      library: "rxfm",
-      libraryTarget: 'umd',
     },
     resolve: {
       extensions: [".ts", ".js", ".json"],
@@ -20,15 +18,15 @@ module.exports = [
         {
           test: /\.ts$/,
           loader: "ts-loader",
-          exclude: '/node_modules/',
-          options: {
-            configFile: "tsconfig.prod.json"
-          }
+          exclude: '/node_modules/'
+        },
+        {
+          test: /\.css$/i,
+          use: ['style-loader', 'css-loader'],
+          exclude: '/node_modules/'
         },
       ]
     },
-    externals: [
-      webpackRxjsExternals(),
-    ],
+    plugins: [new HtmlWebpackPlugin()]
   }
 ];

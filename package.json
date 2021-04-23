@@ -1,6 +1,6 @@
 {
   "name": "rxfm-starter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Alden Laslett",
   "description": "A starter project for the RxFM web framework.",
   "license": "MIT",
@@ -15,8 +15,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "webpack --config webpack.prod.js",
     "start": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
     "test": "jest",
     "test:watch": "jest --watch"
   },
