@@ -1,6 +1,6 @@
 {
   "name": "rxfm-starter",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": "Alden Laslett",
   "description": "A starter project for the RxFM web framework.",
   "license": "MIT",
@@ -21,7 +21,7 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "rxfm": "1.0.0-beta.0",
+    "rxfm": "1.0.0-beta.1",
     "rxjs": "^7.0.0"
   },
   "devDependencies": {

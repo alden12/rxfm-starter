@@ -1,4 +1,4 @@
-import { attribute, B, Button, classes, Div, event, H1, styles } from 'rxfm';
+import { attribute, B, Button, classes, Div, event, H1, style } from 'rxfm';
 import { BehaviorSubject, timer } from 'rxjs';
 
 import './styles.css';
@@ -16,10 +16,9 @@ const Timer = Div(
 export const ClickCounter = () => {
   const clicks = new BehaviorSubject(0);
 
-  return Button`clicks: ${clicks}`.pipe(
-    event('click', () => clicks.next(clicks.value + 1)),
-  ).pipe(
-    styles({ marginTop: '10px' }),
+  return Button`Clicks: ${clicks}`.pipe(
+    event.click(() => clicks.next(clicks.value + 1)),
+    style.marginTop`10px`,
   );
 };
 
@@ -29,14 +28,16 @@ const Examples = Div(
   Timer,
   ClickCounter,
 ).pipe(
-  classes('layout'),
+  classes`layout`,
 );
 
 const App = Div(
-  // Replace these examples with you app code:
+  /**
+   * Replace these examples with your app code:
+   */
   Examples,
 ).pipe(
-  attribute('id', 'app'),
+  attribute.id`app`,
 );
 
 App.subscribe(element => document.body.appendChild(element));
