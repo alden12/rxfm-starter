@@ -1,12 +1,17 @@
 {
     "compilerOptions": {
-        "strictNullChecks": true,
+        "strict": true,
         "outDir": "./dist/",
         "sourceMap": true,
         "declaration": true,
         "module": "commonjs",
-        "target": "es5",
+        "target": "ES2015",
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
         "baseUrl": ".",
+        "jsx": "react",
+        "jsxFactory": "RxFM.createElement"
     },
     "exclude": [
         "node_modules",
